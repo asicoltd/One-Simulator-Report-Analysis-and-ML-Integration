@@ -186,6 +186,8 @@ plt.savefig("Pairplot.eps", format="eps", dpi=300, bbox_inches="tight")
 plt.savefig("Pairplot.jpg", format="jpg", dpi=300, bbox_inches="tight")
 plt.show()
 ```
+
+#### Pair plot
 ![Plots](images/1%20Pairplot.png)
 ## 4. Machine Learning
 
@@ -215,7 +217,9 @@ rmse = mse ** 0.5
 r2 = r2_score(y_test, y_pred_rf)
 print(f"RF Performance: MAE: {mae}, MSE: {mse}, RMSE: {rmse}, R²: {r2}")
 ```
+#### Scatter Plot, Residual Plot, Histogram of Residuals
 ![Plots](images/6%20Scatter%20Plot%2C%20Residual%20Plot%2C%20Histogram%20of%20Residuals.png)
+#### Feature Importance
 ![Plots](images/10%20Corelation%20with%20Delivery_prob%20All%20Router.png)
 
 ### 4.2 Deep Learning with PyTorch
@@ -323,6 +327,7 @@ rmse = np.sqrt(mse)
 r2 = r2_score(y_true, y_pred)
 print(f"Performance Metrics:\nMSE: {mse:.4f}, MAE: {mae:.4f}, RMSE: {rmse:.4f}, R² Score: {r2:.4f}")
 ```
+#### DNN model architecture
 ![Plots](images/11%20NN%20model%20architecture.png)
 
 ## 5. Model Architecture Visualization
@@ -337,7 +342,9 @@ dot.render("iov_model_architecture", format="jpg")  # Save as JPG
 dot.render("iov_model_architecture", format="eps")  # Save as EPS
 dot  # Display the network graph
 ```
+#### Learning Curve
 ![Plots](images/12%20learning%20curve.png)
+#### Performance
 ![Plots](images/13%20performance.png)
 ## Requirements
 
