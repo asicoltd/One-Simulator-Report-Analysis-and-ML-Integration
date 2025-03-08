@@ -161,7 +161,7 @@ df = pd.DataFrame(records)
 df.fillna(0, inplace=True)
 
 # Export DataFrame to CSV
-csv_path = "/content/drive/MyDrive/Colab Notebooks/message_stats.csv"
+csv_path = "message_stats.csv"
 df.to_csv(csv_path, index=False)
 print(f"CSV file saved at: {csv_path}")
 ```
@@ -186,7 +186,7 @@ plt.savefig("Pairplot.eps", format="eps", dpi=300, bbox_inches="tight")
 plt.savefig("Pairplot.jpg", format="jpg", dpi=300, bbox_inches="tight")
 plt.show()
 ```
-
+![Plots](images/1%20Pairplot.png)
 ## 4. Machine Learning
 
 ### 4.1 Traditional Machine Learning
@@ -215,6 +215,8 @@ rmse = mse ** 0.5
 r2 = r2_score(y_test, y_pred_rf)
 print(f"RF Performance: MAE: {mae}, MSE: {mse}, RMSE: {rmse}, R²: {r2}")
 ```
+![Plots](images/6%20Scatter%20Plot%2C%20Residual%20Plot%2C%20Histogram%20of%20Residuals.png)
+![Plots](images/10%20Corelation%20with%20Delivery_prob%20All%20Router.png)
 
 ### 4.2 Deep Learning with PyTorch
 
@@ -321,6 +323,7 @@ rmse = np.sqrt(mse)
 r2 = r2_score(y_true, y_pred)
 print(f"Performance Metrics:\nMSE: {mse:.4f}, MAE: {mae:.4f}, RMSE: {rmse:.4f}, R² Score: {r2:.4f}")
 ```
+![Plots](images/11%20NN%20model%20architecture.png)
 
 ## 5. Model Architecture Visualization
 
@@ -334,7 +337,8 @@ dot.render("iov_model_architecture", format="jpg")  # Save as JPG
 dot.render("iov_model_architecture", format="eps")  # Save as EPS
 dot  # Display the network graph
 ```
-
+![Plots](images/12%20learning%20curve.png)
+![Plots](images/13%20performance.png)
 ## Requirements
 
 Install the necessary Python packages:
