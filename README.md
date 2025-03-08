@@ -328,7 +328,7 @@ r2 = r2_score(y_true, y_pred)
 print(f"Performance Metrics:\nMSE: {mse:.4f}, MAE: {mae:.4f}, RMSE: {rmse:.4f}, R² Score: {r2:.4f}")
 ```
 #### DNN model architecture
-![Plots](images/11%20NN%20model%20architecture.png)
+![Plots](images/11%20DNN%20model%20architecture.png)
 
 ## 5. Model Architecture Visualization
 
